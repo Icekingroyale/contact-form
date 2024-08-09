@@ -2,28 +2,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 
+
+
+:root{
+/* primary colors */
+--GreenL: hsl(148, 38%, 91%);
+--GreenM: hsl(169, 82%, 27%);
+--Red: hsl(0, 66%, 54%);
+
+/* neutral colors */
+--White: hsl(0, 0%, 100%);
+--GreyD: hsl(186, 15%, 59%);
+--GreyM: hsl(187, 24%, 22%);
+}
+
+
+
 body{
-
-    background-color: Grey 900 hsl(187, 24%, 22%)
-
+    background-color: var(--GreenL);
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: x-small;
 }
 
 section{
     
-    height: 300px;
-    /* width: 500px; */
-    margin: 50px; 
-    border: 2px solid red;
-    background-color: Grey 500 hsl(186, 15%, 59%);
+    display: flex;
+    justify-content: center;
+    background-color: var(--White);
+    border-radius: 15px;
+    height: 100%;
+    width: 380px;
+    margin: 100px auto 50px auto;
+    padding-bottom: 30px;      
+      
+}
+
+
+    /* trying to space the fname & lname text boxes
+     space out horizontally the contents of the form
+     the email box and message box should fit the rest */
+
+
+
+
+.names{
+    display: flex;    
 }
 
 
 
+.qtype{
+    display: inline-block;
+}
+
+.enquiry, .request{
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 3px;
+    padding-right: 15px;
+    font-size: 11px;
+    
+
+}
+
 
 .button{
-    
-    width: 450px;
-    color: Green 600 hsl(169, 82%, 27%);
+    background-color: var(--GreenM);
+    color: var(--White);
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
 }
 
 

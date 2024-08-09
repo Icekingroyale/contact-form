@@ -12,28 +12,33 @@
 <body>
       <section>
         <form action="">
-          <div class="names">
-        
-          
-            <h1>Contact Us</h1>
-            <label for="fname">First Name</label> 
-            <input type="text" name="First Name" id="name">
-
-            <label for="lname">Last Name</label> 
-            <input type="text" name="Last Name" id="name">
+          <h1>Contact Us</h1> 
+          <div class="names">             
+            <div>
+              <label for="fname">First Name</label> <br>
+              <input type="text" name="First Name" id="fname">
+            </div>
+            <div>
+              <label for="lname">Last Name</label> <br>
+              <input type="text" name="Last Name" id="lname">
+            </div>
           </div>
           <div class="mail">
-            <label for="email">Email Address</label>
+            <label for="email">Email Address</label><br>
             <input type="email">
           </div>
-          <span class="qtype">
-            <label for=>Query Type</label><br>
-            <input type="radio" name="Enquiry" id="">
-            <label for="">General Enquiry</label>
-            <input type="radio" name="Request">
-            <label for="">Support Request</label><br>
+          <div class="qtype">
+            <p>Query Type</p>
+            <div class="enquiry">
+              <input type="radio" name="enquiry" id="enquiry">
+              <label for="enquiry">General Enquiry</label>
+            </div>
+            <div class="request">
+              <input type="radio" name="request" id="request" >
+              <label for="request">Support Request</label><br>
+            </div>
             
-            </span>
+          </div> <br>
             <label for="">Message</label><br>
             <textarea name="" id=""></textarea><br>
             <input type="checkbox" name="" id="">

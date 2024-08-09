@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body{
+
+    background-color: Grey 900 hsl(187, 24%, 22%)
+
+}
+
+section{
+    
+    height: 300px;
+    /* width: 500px; */
+    margin: 50px; 
+    border: 2px solid red;
+    background-color: Grey 500 hsl(186, 15%, 59%);
+}
+
+
+
+
+.button{
+    
+    width: 450px;
+    color: Green 600 hsl(169, 82%, 27%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+

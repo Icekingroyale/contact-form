@@ -27,12 +27,12 @@ body{
 
 section{
     
+    height: 100%;
+    width: 380px;
     display: flex;
     justify-content: center;
     background-color: var(--White);
     border-radius: 15px;
-    height: 100%;
-    width: 380px;
     margin: 100px auto 50px auto;
     padding-bottom: 30px;      
       

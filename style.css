@@ -3,7 +3,6 @@
 
 
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -63,6 +62,7 @@ form{
     margin: 10px auto; 
     gap: 8px;
     
+    
     #lname, #fname{
         border-width: 1px;
         border-radius: 5px;
@@ -85,21 +85,35 @@ form{
     }
 }
 
+
 .qtype{
-    display: inline-block;
+    /* border: 2px solid red; */
+    
+    p{
+        margin: 10px auto;
+    }    
 }
+
 
 
 .enquiry, .request{
     display: inline-block;
     border: 1px solid black;
-    /* border-width: 1px; */
     height: 30px;
     border-radius: 5px;
-    margin: 3px;
-    padding-right: 15px;
+    gap: 10px;
+    
+    padding: auto 50px;
     font-size: 11px;
     width: 170px;
+
+    input{
+        border: 2px solid red;
+        /* margin: 6px 5px; */
+        margin: 10px;
+        margin-top: 5px;
+        padding-right: 10px;
+   }
 }
 
 .msgbox{
@@ -107,12 +121,12 @@ form{
 }
 
 .consent{
-    margin: 20px auto;
+    margin: 15px auto;
     
     label{
         /* border: 2px solid green; */
         margin-left: 10px;
-        }
+   }
 }
 
 textarea{

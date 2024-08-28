@@ -86,13 +86,10 @@ form{
 }
 
 
-.qtype{
-    /* border: 2px solid red; */
-    
-    p{
-        margin: 10px auto;
-        
-    }    
+
+
+#email{
+    padding-left: 4px;
 }
 
 
@@ -107,7 +104,7 @@ form{
     height: 30px;
     border-radius: 5px;
     gap: 10px;
-    
+    margin: auto 3px;
     padding: auto 50px;
     font-size: 11px;
     width: 170px;

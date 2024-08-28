@@ -32,22 +32,25 @@ document.getElementById('lname').onmouseleave = () => {
 
 
 // handling form submission
-function handleSubmit(xyz) {
-    xyz.preventDefault()  //prevent default submissions
-    const firstnamn = document.getElementsByid('fname')
-    const lastname = document.getElementById('lname')
+
+
+
+// function handleSubmit(xyz) {
+//     xyz.preventDefault()  //prevent default submissions
+//     const firstnamn = document.getElementsByid('fname')
+//     const lastname = document.getElementById('lname')
   
-    if (!firstname.value && !lastname.value) {
-      firstname.style.border = '2px solid red'
-      lastname.style.border = '2px solid red'
-    }
-}    
+//     if (!firstname.value && !lastname.value) {
+//       firstname.style.border = '2px solid red'
+//       lastname.style.border = '2px solid red'
+//     }
+// }    
 
 
-// onclick 
-// document.getElementById('fname').onclick = () => {
-//     document.getElementById('fname').style.border = '2px solid pink'
-// }
+onclick 
+document.querySelector('.submit').onclick = () => {
+    alert("Message Sent!")
+}
 
 // document.getElementById('fname').onclick = () => {
 //     document.querySelector('#fname').style.border = '2px solid red'

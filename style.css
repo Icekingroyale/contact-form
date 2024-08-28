@@ -77,7 +77,7 @@ form{
     margin: 20px auto;    
 
     input{
-        /* border: 2px solid red; */
+        border: 2px solid red;
         border-width: 1px;
         border-radius: 5px;
         width: 350px;

@@ -32,7 +32,7 @@ body{
 
 section{
     /* border: 2px solid blue; */
-    height: 530px;
+    
     width: 380px;
     display: flex;
     justify-content: center;
@@ -45,8 +45,7 @@ section{
 
 
 form{
-    height: 400px;
-    margin-top: 20px;
+      margin-top: 20px;
     /* border: 2px solid yellow; */
 }
 
@@ -96,6 +95,11 @@ form{
         /* border: 2px solid red; */
         margin-top: 5px;
     }
+}
+
+.err{
+    display: none;
+    color: red;
 }
 
 

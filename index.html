@@ -30,31 +30,31 @@
           <div class="mail">
             <label for="email">Email Address *</label><br>
             <input type="email" placeholder="email@example.com" id="email">
-            <p class="err">  Please enter a valid email address</p>
+            <p class="err">This field is required</p>
           </div>
           <div class="qtype">
             <p>Query Type *</p>
             <div class="enquiry">
-              <input type="radio" name="qtype" id="enquiry">
+              <input type="radio" name="qtype" id="enquiry" value="enquiry">
               <label for="enquiry">General Enquiry</label>
             </div>
             <div class="request">
-              <input type="radio" name="qtype" id="request" >
+              <input type="radio" name="qtype" id="request" value="request">
               <label for="request">Support Request</label><br>
             </div>
-            <p class="err" id="queryp">Please select a query type</p>
+            <p class="err" id="queryp" >Please select a query type</p>
           </div> <br>
           <div class="msgbox">
             <label for="">Message *</label><br>
             <textarea name="" id="message"></textarea><br>
-            <p> This field is required</p>
+            <p class="err"> This field is required</p>
           </div>
           <div class="consent">
             <input type="checkbox" name="" id="checkbox">
             <label for="" id="label">I consent to being contacted by the team *</label><br>
           </div>
           <div class="consenterr">
-            <p>To submit this form, please consent to being contacted </p>
+            <p class="err">To submit this form, please consent to being contacted </p>
           </div>
           
           <input type="submit" value="submit" class="submit"/>

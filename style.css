@@ -4,6 +4,7 @@
 
 *{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -31,7 +32,7 @@ body{
 
 section{
     /* border: 2px solid blue; */
-    height: 470px;
+    height: 530px;
     width: 380px;
     display: flex;
     justify-content: center;
@@ -62,13 +63,21 @@ form{
     margin: 10px auto; 
     gap: 8px;
     
-    
+    label{
+        /* border: 2px solid red; */
+        margin-top: 10px;
+    }
+
     #lname, #fname{
         border-width: 1px;
         border-radius: 5px;
         height: 30px;
         width: 171px;
         
+    }
+    p{
+        /* border: 2px solid red; */
+        margin-top: 5px;
     }
 }
 
@@ -77,14 +86,17 @@ form{
     margin: 20px auto;    
 
     input{
-        /* border: 2px solid red; */
+        border: 2px solid black;
         border-width: 1px;
         border-radius: 5px;
         width: 350px;
         height: 30px;
     }
+    p{
+        /* border: 2px solid red; */
+        margin-top: 5px;
+    }
 }
-
 
 
 
@@ -92,6 +104,11 @@ form{
     padding-left: 4px;
 }
 
+.qtype{
+    p{
+        margin-bottom: 5px;
+    }
+}
 
 #enquiry, #request, label, #checkbox{
     accent-color: var(--GreenM);
@@ -99,36 +116,55 @@ form{
 }
 
 .enquiry, .request{
-    display: inline-block;
+    display: inline-flex;
     border: 1px solid black;
     height: 30px;
     border-radius: 5px;
     gap: 10px;
-    margin: auto 3px;
-    padding: auto 50px;
+    align-items: center;
+    margin: auto 3px; 
     font-size: 11px;
     width: 170px;
-
+    
     input{
         /* border: 2px solid red; */
-        /* margin: 6px 5px; */
-        margin: 10px;
+        align-items: center;
+        margin: 5px;
+        }
+
+    }
+    #queryp{
+        /* border: 2px solid red; */
         margin-top: 5px;
-        padding-right: 10px;
-   }
-}
+    }
 
 .msgbox{
-    margin-top: 20px;    
+    p{
+        /* border: 2px solid red; */
+        margin-top: 5px;
+    }
 }
 
 .consent{
     margin: 15px auto;
+    display: inline-flex;
+    
     
     label{
         /* border: 2px solid green; */
         margin-left: 10px;
-   }
+    }
+
+    
+}
+
+#label, #input{
+    /* border: 2px solid red; */
+    margin-bottom: -5px;
+}
+.consenterr{
+    /* border: 2px solid red; */
+    margin-bottom: 10px;
 }
 
 textarea{
@@ -142,6 +178,7 @@ textarea{
 
 
 .submit{
+    border: 2px solid var(--GreenM);
     background-color: var(--GreenM);
     color: var(--White);
     width: 100%;
@@ -149,6 +186,7 @@ textarea{
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 
 .attribution { font-size: 11px; text-align: center; }

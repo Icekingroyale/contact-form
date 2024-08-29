@@ -30,6 +30,49 @@ document.getElementById('lname').onmouseleave = () => {
 }
 
 
+const firstname = document.getElementById('fname')
+const lastname = document.getElementById('lname')
+const email = document.getElementById('email')
+const request = document.getElementById('request')
+const enquiry = document.getElementById('enquiry')
+const message = document.getElementById('message')
+const checkbox = document.getElementById('checkbox')
+const error = document.getElementsByClassName('err')
+
+document.getElementById('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const err = [];
+
+    if (!firstname.value) {
+        firstname.style.border = "1px solid red";
+        err.push({ idx: 0, msg: "" });
+      }
+      if (!lastname.value) {
+        lastname.style.border = "1px solid red";
+        err.push({ idx: 1, msg: "" });
+      }
+      if (!email.value) {
+        email.style.border = "1px solid red";
+        err.push({ idx: 2, msg: "" });
+      }
+      if (!enquiry.value && !request.value) err.push({ idx: 3, msg: "" });
+     
+      if (!message.value) {
+        message.style.border = "1px solid red";
+        err.push({ idx: 4, msg: "" });
+      }
+      
+      if (!checkbox.value) err.push({ idx: 5, msg: "" });
+    
+      if (err.length) {
+        error.forEach((x, i) => {
+          err.filter((y) => y.idx === i)[0].style.display = "block";
+        });
+      }
+});
+    
+
 
 // handling form submission
 
@@ -47,10 +90,10 @@ document.getElementById('lname').onmouseleave = () => {
 // }    
 
 
-onclick 
-document.querySelector('.submit').onclick = () => {
-    alert("Message Sent!")
-}
+// onclick 
+// document.querySelector('.submit').onclick = () => {
+//     alert("Message Sent!")
+// }
 
 // document.getElementById('fname').onclick = () => {
 //     document.querySelector('#fname').style.border = '2px solid red'
